@@ -45,29 +45,29 @@ ul li.active a ion-icon {
   transition: 0.2s;
   z-index: -2;
 }
-.indicator::after {
+.indicator::before {
   position: absolute;
   top: -10px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); 
   content: '';
   width: 45px;
   height: 35px;
   border-radius: 5px;
-  /* background: rgb(75, 176, 234);
-  box-shadow: 0 0 15px rgb(75, 176, 234),
-  0 0 20px rgb(75, 176, 234),
-  0 0 45px rgb(75, 176, 234),
-  0 0 60px rgb(75, 176, 234); */
+  background: rgb(234, 226, 75);
+  box-shadow: 0 0 15px rgb(234, 226, 75),
+  0 0 20px rgb(234, 226, 75),
+  0 0 45px rgb(234, 226, 75),
+  0 0 60px rgb(234, 226, 75);
 }
-ul li:nth-child(1).active ~ .indicator::after {
+ul li:nth-child(1).active ~ .indicator::before {
   background: rgb(75, 176, 234);
   box-shadow: 0 0 15px rgb(75, 176, 234),
   0 0 20px rgb(75, 176, 234),
   0 0 45px rgb(75, 176, 234),
   0 0 60px rgb(75, 176, 234);
 }
-ul li:nth-child(2).active ~ .indicator::after {
+ul li:nth-child(2).active ~ .indicator::before {
   background: rgb(75, 234, 107);
   box-shadow: 0 0 15px rgb(75, 234, 107),
   0 0 20px rgb(75, 234, 107),
@@ -81,14 +81,14 @@ ul li:nth-child(3).active ~ .indicator::after {
   0 0 45px rgb(234, 226, 75),
   0 0 60px rgb(234, 226, 75);
 }
-ul li:nth-child(4).active ~ .indicator::after {
+ul li:nth-child(4).active ~ .indicator::before {
   background: rgb(234, 75, 75);
   box-shadow: 0 0 15px rgb(234, 75, 75),
   0 0 20px rgb(234, 75, 75),
   0 0 45px rgb(234, 75, 75),
   0 0 60px rgb(234, 75, 75);
 }
-ul li:nth-child(5).active ~ .indicator::after {
+ul li:nth-child(5).active ~ .indicator::before {
   background: rgb(178, 75, 234);
   box-shadow: 0 0 15px rgb(178, 75, 234),
   0 0 20px rgb(178, 75, 234),
